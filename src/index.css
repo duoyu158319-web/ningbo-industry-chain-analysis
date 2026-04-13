@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Space Grotesk", "Noto Sans SC", sans-serif;
+  --font-body: "Inter", "Noto Sans SC", sans-serif;
+
+  --color-primary: #2ddbde;
+  --color-primary-container: #005c5e;
+  --color-on-primary: #003738;
+  --color-on-primary-container: #2cdbde;
+
+  --color-secondary: #78dc77;
+  --color-secondary-container: #00761f;
+  --color-on-secondary: #00390a;
+  --color-on-secondary-container: #95fb92;
+
+  --color-tertiary: #f9abff;
+  --color-tertiary-container: #8c10a1;
+  --color-on-tertiary: #570066;
+  --color-on-tertiary-container: #f9abff;
+
+  --color-background: #0b141a;
+  --color-surface: #0b141a;
+  --color-on-surface: #dae4ec;
+  --color-on-surface-variant: #bfc8cc;
+  
+  --color-surface-container-lowest: #060f15;
+  --color-surface-container-low: #141d23;
+  --color-surface-container: #182127;
+  --color-surface-container-high: #222b31;
+  --color-surface-container-highest: #2d363c;
+  
+  --color-outline: #899296;
+  --color-outline-variant: #40484c;
+  
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-surface/80 backdrop-blur-[20px];
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-outline-variant/20 rounded-full;
+}

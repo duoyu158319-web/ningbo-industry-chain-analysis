@@ -1,0 +1,3 @@
+总企业数：1272
+association_score > 0 的企业：1272 家
+平均 association_score：65.62617135797656
