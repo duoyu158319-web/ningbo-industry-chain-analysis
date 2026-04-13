@@ -1,0 +1,19 @@
+# FastAPI Framework
+fastapi>=0.109.2
+# NOTE: Vercel Python Runtime 使用 Mangum 作为 ASGI 适配器
+mangum>=0.17.0
+
+# Database
+# NOTE: 需要使用支持云环境的数据库驱动。
+# Vercel Serverless 不支持本地 MySQL，请使用 PlanetScale / TiDB Cloud / Supabase 等云数据库。
+SQLAlchemy>=2.0.27
+pymysql>=1.1.0
+cryptography>=42.0.5
+
+# Validation
+pydantic>=2.6.1
+pydantic-settings>=2.2.1
+
+# Others
+python-dotenv>=1.0.1
+httpx>=0.27.0
